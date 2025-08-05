@@ -1,9 +1,9 @@
-# Pionex Trading Bot GUI - Requirements (Compatible Versions)
-# Install with: pip install -r requirements.txt
+# Pionex Trading Bot GUI - Requirements (Python 3.13 Compatible)
+# This version excludes pandas and other packages that don't compile with Python 3.13
 
-# Build tools (Required for compatibility)
-setuptools>=65.0.0
-wheel>=0.38.0
+# Build tools (Required for Python 3.13)
+setuptools>=68.0.0
+wheel>=0.41.0
 
 # Core Flask Framework (Compatible versions)
 Flask>=2.2.0,<2.4.0
@@ -26,13 +26,8 @@ urllib3>=1.26.0,<2.1.0
 # Cryptography and Security
 cryptography>=40.0.0,<42.0.0
 
-# Data Processing (Compatible versions)
-pandas>=1.5.0,<2.2.0
+# Basic data processing (Python 3.13 compatible)
 numpy>=1.24.0,<1.27.0
-
-# Technical Analysis
-ta>=0.10.0,<0.11.0
-scipy>=1.10.0,<1.12.0
 
 # WebSocket Support
 websocket-client>=1.5.0,<1.7.0
