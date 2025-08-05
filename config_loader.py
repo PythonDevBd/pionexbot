@@ -132,6 +132,20 @@ def get_config(file_path: str = "config.yaml") -> Dict[str, Any]:
     
     return config
 
+def reload_config(file_path: str = "config.yaml") -> Dict[str, Any]:
+    """Reload configuration from file and environment"""
+    print("🔄 Reloading configuration...")
+    
+    # Clear any cached config
+    if hasattr(reload_config, '_cached_config'):
+        delattr(reload_config, '_cached_config')
+    
+    # Get fresh config
+    config = get_config(file_path)
+    
+    print("✅ Configuration reloaded successfully")
+    return config
+
 def validate_config(config: Dict[str, Any]) -> bool:
     """Validate configuration"""
     errors = []
@@ -259,6 +273,10 @@ def main():
         else:
             print("❌ Failed to create default config")
             return
+    
+    # Test reload_config
+    print("Testing reload_config...")
+    reloaded_config = reload_config()
     
     # Validate config
     if validate_config(config):
