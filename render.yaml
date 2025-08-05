@@ -5,7 +5,7 @@ services:
     plan: free
     buildCommand: |
       pip install --upgrade pip setuptools wheel
-      pip install -r requirements_basic.txt
+      pip install -r requirements_python313.txt
     startCommand: python main.py
     envVars:
       - key: PIONEX_API_KEY
