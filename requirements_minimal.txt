@@ -1,0 +1,36 @@
+# Minimal requirements for Pionex Trading Bot GUI
+# This file contains only the essential packages needed to run the application
+
+# Core Flask Framework
+Flask>=2.2.0,<2.4.0
+Flask-SocketIO>=5.2.0,<5.4.0
+Werkzeug>=2.2.0,<2.4.0
+
+# Environment and Configuration
+python-dotenv>=0.19.0,<1.1.0
+PyYAML>=6.0.0,<7.0.0
+
+# Database
+SQLAlchemy>=2.0.0,<2.1.0
+
+# HTTP Requests
+requests>=2.28.0,<2.32.0
+urllib3>=1.26.0,<2.1.0
+
+# Cryptography and Security
+cryptography>=40.0.0,<42.0.0
+
+# Data Processing (Essential only)
+pandas>=1.5.0,<2.2.0
+numpy>=1.24.0,<1.27.0
+
+# Technical Analysis
+ta>=0.10.0,<0.11.0
+scipy>=1.10.0,<1.12.0
+
+# WebSocket Support
+websocket-client>=1.5.0,<1.7.0
+
+# Production Server
+gunicorn>=20.1.0,<21.3.0
+eventlet>=0.33.0,<0.34.0 
